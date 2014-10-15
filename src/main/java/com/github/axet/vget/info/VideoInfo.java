@@ -185,7 +185,7 @@ public class VideoInfo {
         // video rendered by youtube
 
         // customize exception
-        if (user.getUserQuality() != null)
+        if (user.getUserQuality() == null)
             throw new DownloadError("no video user quality found");
 
         throw new DownloadError("no video with required quality found,"
